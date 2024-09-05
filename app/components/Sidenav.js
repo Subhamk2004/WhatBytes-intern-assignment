@@ -10,11 +10,11 @@ const Sidebar = ({ setActiveComponent }) => {
 
   return (
     <div className='w-64 bg-white-100 p-4 border-r border-gray-300 md:w-full'>
-      <ul className="md:flex md:w-full md:justify-around mb-1">
+      <ul className="md:flex md:w-full md:justify-around">
         <li className='mb-4'>
           <button
             onClick={() => handleClick("Dashboard")}
-            className={`w-full flex items-center sm:p-1 p-3 bg-gray rounded-lg shadow-md hover:bg-gray-200 font-bold ${
+            className={`w-full flex items-center sm:p-1 p-3 rounded-lg bg-gray-100 hover:bg-gray-200 font-bold ${
               activeButton === "Dashboard" ? "text-blue-600" : "text-gray-500"
             }`}
           >
@@ -29,8 +29,8 @@ const Sidebar = ({ setActiveComponent }) => {
         <li className='mb-4'>
           <button
             onClick={() => handleClick("SkillTest")}
-            className={`w-full flex items-center  sm:p-1 p-3 bg-gray rounded-lg shadow-md hover:bg-gray-200 font-bold ${
-              activeButton === "SkillTest" ? "text-blue-600" : "text-gray-500"
+            className={`w-full flex items-center sm:p-1 p-3 rounded-lg bg-gray-100 hover:bg-gray-200 font-bold ${
+              activeButton === "Dashboard" ? "text-blue-600" : "text-gray-500"
             }`}
           >
             <img
@@ -44,8 +44,8 @@ const Sidebar = ({ setActiveComponent }) => {
         <li className='mb-4'>
           <button
             onClick={() => handleClick("Internship")}
-            className={`w-full flex items-center p-3 sm:p-1  bg-gray rounded-lg shadow-md hover:bg-gray-200 font-bold ${
-              activeButton === "Internship" ? "text-blue-600" : "text-gray-500"
+            className={`w-full flex items-center sm:p-1 p-3 rounded-lg bg-gray-100 hover:bg-gray-200 font-bold ${
+              activeButton === "Dashboard" ? "text-blue-600" : "text-gray-500"
             }`}
           >
             <img
