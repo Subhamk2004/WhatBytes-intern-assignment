@@ -10,50 +10,50 @@ const Sidebar = ({ setActiveComponent }) => {
 
   return (
     <div className='w-64 bg-white-100 p-4 border-r border-gray-300 md:w-full'>
-      <ul className="md:flex md:w-full md:justify-around">
+      <ul className="md:flex md:w-full md:justify-around mb-1">
         <li className='mb-4'>
           <button
             onClick={() => handleClick("Dashboard")}
-            className={`w-full flex items-center p-3 bg-gray rounded-lg shadow-md hover:bg-gray-200 font-bold ${
+            className={`w-full flex items-center sm:p-1 p-3 bg-gray rounded-lg shadow-md hover:bg-gray-200 font-bold ${
               activeButton === "Dashboard" ? "text-blue-600" : "text-gray-500"
             }`}
           >
             <img
               src='/images/dashboard.png'
               alt='Dashboard'
-              className='w-6 h-6 mr-3'
+              className='sm:w-5 sm:h-5 w-6 h-6 sm:mr-1 mr-3'
             />
-            <span>Dashboard</span>
+            <span className="sm:text-xs  ">Dashboard</span>
           </button>
         </li>
         <li className='mb-4'>
           <button
             onClick={() => handleClick("SkillTest")}
-            className={`w-full flex items-center p-3 bg-gray rounded-lg shadow-md hover:bg-gray-200 font-bold ${
+            className={`w-full flex items-center  sm:p-1 p-3 bg-gray rounded-lg shadow-md hover:bg-gray-200 font-bold ${
               activeButton === "SkillTest" ? "text-blue-600" : "text-gray-500"
             }`}
           >
             <img
               src='/images/skills.png'
               alt='Skill Test'
-              className='w-6 h-6 mr-3'
+              className='sm:w-5 sm:h-5 w-6 h-6 sm:mr-1 mr-3'
             />
-            <span>Skill Test</span>
+            <span className="sm:text-xs ">Skill Test</span>
           </button>
         </li>
         <li className='mb-4'>
           <button
             onClick={() => handleClick("Internship")}
-            className={`w-full flex items-center p-3 bg-gray rounded-lg shadow-md hover:bg-gray-200 font-bold ${
+            className={`w-full flex items-center p-3 sm:p-1  bg-gray rounded-lg shadow-md hover:bg-gray-200 font-bold ${
               activeButton === "Internship" ? "text-blue-600" : "text-gray-500"
             }`}
           >
             <img
               src='/images/file-regular.svg'
               alt='Internship'
-              className='w-6 h-6 mr-3'
+              className='sm:w-5 sm:h-5 w-6 h-6 sm:mr-1 mr-3'
             />
-            <span>Internship</span>
+            <span className="sm:text-xs ">Internship</span>
           </button>
         </li>
       </ul>

@@ -37,8 +37,8 @@ const Quick = ({ setScore, score }) => {
 
   return (
     <div className='flex flex-col w-[50%] md:w-[100%] border-gray-300'>
-      <div className='p-4 bg-white rounded-2xl  flex gap-5 items-center border border-gray-300 md:flex-col md:align-middle'>
-        <div className="flex flex-row gap-2">
+      <div className='p-4 bg-white rounded-2xl  flex gap-5 items-center border border-gray-300 lg:flex-col lg:align-middle'>
+        <div className="flex flex-row lg:flex-col md:flex-row gap-2">
           <img
             src='/images/html.jpeg'
             alt='Skill Test'
@@ -70,7 +70,7 @@ const Quick = ({ setScore, score }) => {
       </div>
       <div className='p-4 bg-white rounded-2xl  gap-5 mt-8 border border-gray-300 flex flex-col'>
         <h5 className='text-lg font-bold'>Quick Statistics</h5>
-        <div className='flex justify-around sm:flex-col'>
+        <div className='flex justify-around sm:flex-col lg:flex-col'>
           <div className='flex gap-5 items-center'>
             <img src="images/trophy.png" className='h-12 w-12 bg-gray-100 rounded-full p-2' />
 
