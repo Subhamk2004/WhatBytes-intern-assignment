@@ -30,7 +30,7 @@ const Sidebar = ({ setActiveComponent }) => {
           <button
             onClick={() => handleClick("SkillTest")}
             className={`w-full flex items-center sm:p-1 p-3 rounded-lg bg-gray-100 hover:bg-gray-200 font-bold ${
-              activeButton === "Dashboard" ? "text-blue-600" : "text-gray-500"
+              activeButton === "SkillTest" ? "text-blue-600" : "text-gray-500"
             }`}
           >
             <img
@@ -45,7 +45,7 @@ const Sidebar = ({ setActiveComponent }) => {
           <button
             onClick={() => handleClick("Internship")}
             className={`w-full flex items-center sm:p-1 p-3 rounded-lg bg-gray-100 hover:bg-gray-200 font-bold ${
-              activeButton === "Dashboard" ? "text-blue-600" : "text-gray-500"
+              activeButton === "Internship" ? "text-blue-600" : "text-gray-500"
             }`}
           >
             <img
